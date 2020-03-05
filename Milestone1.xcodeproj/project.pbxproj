@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B843B29C2410EF9C0078AE59 /* Potato.swift in Sources */ = {isa = PBXBuildFile; fileRef = B843B29B2410EF9C0078AE59 /* Potato.swift */; };
 		B84BA8C6240FFB5E000ED948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84BA8C5240FFB5E000ED948 /* AppDelegate.swift */; };
 		B84BA8C8240FFB5E000ED948 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84BA8C7240FFB5E000ED948 /* SceneDelegate.swift */; };
 		B84BA8CA240FFB5E000ED948 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84BA8C9240FFB5E000ED948 /* ContentView.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B843B29B2410EF9C0078AE59 /* Potato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Potato.swift; sourceTree = "<group>"; };
 		B84BA8C2240FFB5E000ED948 /* Milestone1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Milestone1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84BA8C5240FFB5E000ED948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B84BA8C7240FFB5E000ED948 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		B843B29A2410EED20078AE59 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B843B29B2410EF9C0078AE59 /* Potato.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			files = (
 				B84BA8C6240FFB5E000ED948 /* AppDelegate.swift in Sources */,
 				B84BA8C8240FFB5E000ED948 /* SceneDelegate.swift in Sources */,
+				B843B29C2410EF9C0078AE59 /* Potato.swift in Sources */,
 				B84BA8CA240FFB5E000ED948 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
