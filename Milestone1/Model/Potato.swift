@@ -5,6 +5,7 @@
 //  Created by Zac Cripps on 5/3/20.
 //  Copyright © 2020 Zac Cripps. All rights reserved.
 //
+//the struct contains all the parameters that make for the objects in "Potato"
 struct Potato {
     let name:String
     let scienceName:String

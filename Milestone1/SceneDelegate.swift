@@ -12,6 +12,8 @@ import SwiftUI
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    //creats the object for potatos with the following parameters
+    //this information is exclusivley used for the simulation
     let potato = Potato(name: "Kipfler", family:"Sweet Potato", weight: "20grams", scienceName: "", nutrition: "manganese, potassium and vitamin C")
 
 
@@ -20,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
-        // Create the SwiftUI view that provides the window contents.
+        // Create the SwiftUI view that provides the window contents which for milestone is the objects of struct potato.
         let contentView = ContentView(potato: potato)
 
         // Use a UIHostingController as window root view controller.

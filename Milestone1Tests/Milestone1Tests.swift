@@ -18,10 +18,8 @@ class Project1Tests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
+//functions used to test the struct and the values that are given to the variables disbaled on screen
     func testModel() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
         let potatoName = "Kipfler"
         let potatoWeight = "20grams"
         let potatoScienceName = "Solanum tuberosum"
@@ -36,6 +34,7 @@ class Project1Tests: XCTestCase {
         XCTAssertEqual(potato.nutrition,potatoNutrition)
         XCTAssertEqual(potato.family,potatoFamily)
     }
+    //the struct test is broken down into individual test functions for each element on the phone
     func testPotatoName(){
         let potatoName = "Kipfler"
         let potato = Potato(name:potatoName, family:"Sweet Potato", weight:"20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C")

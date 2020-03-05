@@ -9,12 +9,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    //links the struct potato so that objects can use its parameters
     var potato: Potato
     
     var body: some View {
-        
+        //formats all text and images in a vertical stack
         VStack(alignment: .center) {
-            
+            //display the name for the object on the screen
             Text(potato.name)
                 .font(.title)
                 .fontWeight(.bold)
@@ -25,7 +26,7 @@ struct ContentView: View {
                 .italic()
                 .lineLimit(nil)
                 .padding(.bottom, 15.0)
-            
+            //display the image called "potato" in the Assets folder
             Image("potato")
                 .resizable()
                 .padding(.vertical, 15.0)
@@ -35,6 +36,7 @@ struct ContentView: View {
                 .scaledToFit()
         
             HStack(alignment: .center) {
+                //display the following elements horizontally
                 VStack(alignment: .trailing){
                     Text("Family:").fontWeight(.bold).multilineTextAlignment(.center)
                         .padding(.bottom, 10.0)
@@ -67,6 +69,8 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
+    //link the struct to the static view
+    //creats the object with the following parameters
     static var previews: some View {
         ContentView(potato: Potato(name: "Kipfler", family: "Sweet Potato", weight: "20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C"))
     }
