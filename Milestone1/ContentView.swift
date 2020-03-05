@@ -36,32 +36,30 @@ struct ContentView: View {
         
             HStack(alignment: .center) {
                 VStack(alignment: .trailing){
-                    Text("Family:")
-                        .fontWeight(.bold)
-                        .multilineTextAlignment(.center)
+                    Text("Family:").fontWeight(.bold).multilineTextAlignment(.center)
                         .padding(.bottom, 10.0)
                     
                     Text("Weight:")
-                        .fontWeight(.bold)
-                        .multilineTextAlignment(.center)
-                        .padding(.bottom, 10.0)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                    .padding(.bottom, 10.0)
                 
                     Text("Nutrition: ")
-                        .fontWeight(.bold)
-                        .multilineTextAlignment(.center)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
                 }
                 
                 VStack(alignment: .leading){
                     Text(potato.family)
-                        .multilineTextAlignment(.center)
-                        .padding(.bottom, 10.0)
+                    .multilineTextAlignment(.center)
+                    .padding(.bottom, 10.0)
                         
                     Text(potato.weight)
-                        .multilineTextAlignment(.center)
-                        .padding(.bottom, 10.0)
+                    .multilineTextAlignment(.center)
+                    .padding(.bottom, 10.0)
                     
                     Text(potato.nutrition)
-                        .multilineTextAlignment(.center)
+                    .multilineTextAlignment(.center)
                 }
             }
         }
