@@ -36,6 +36,32 @@ class Project1Tests: XCTestCase {
         XCTAssertEqual(potato.nutrition,potatoNutrition)
         XCTAssertEqual(potato.family,potatoFamily)
     }
+    func testPotatoName(){
+        let potatoName = "Kipfler"
+        let potato = Potato(name:potatoName)
+        XCTAssert(potato.name == potatoName)
+    }
+    func testPotatoWeight(){
+        let potatoWeight = "20grams"
+        let potato = Potato(weight:potatoWeight)
+        XCTAssert(potato.weight == potatoWeight)
+    }
+    func testPotatoScienceName(){
+        let potatoScienceName = "Solanum tuberosum"
+        let potato = Potato(scienceName: potatoScienceName)
+        XCTAssertEqual(potato.scienceName,potatoScienceName)
+    }
+    func testPotatoNutrition(){
+        let potatoNutrition = "manganese, potassium and vitamin C"
+        let potato = Potato(nutrition: potatoNutrition)
+        XCTAssertEqual(potato.nutrition,potatoNutrition)
+    }
+    func testFamily(){
+        let potatoFamily = "Sweet Potato"
+        let potato = Potato(family:potatoFamily)
+        XCTAssertEqual(potato.family,potatoFamily)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
