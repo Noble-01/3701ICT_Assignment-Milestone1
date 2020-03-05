@@ -38,27 +38,28 @@ class Project1Tests: XCTestCase {
     }
     func testPotatoName(){
         let potatoName = "Kipfler"
-        let potato = Potato(name:potatoName)
+        let potato = Potato(name:potatoName, family:"Sweet Potato", weight:"20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C")
+
         XCTAssert(potato.name == potatoName)
     }
     func testPotatoWeight(){
         let potatoWeight = "20grams"
-        let potato = Potato(weight:potatoWeight)
+        let potato = Potato(name:"Kipfler", family:"Sweet Potato", weight:potatoWeight, scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C")
         XCTAssert(potato.weight == potatoWeight)
     }
     func testPotatoScienceName(){
         let potatoScienceName = "Solanum tuberosum"
-        let potato = Potato(scienceName: potatoScienceName)
+        let potato = Potato(name:"Kipfler", family:"Sweet Potato", weight:"20grams", scienceName: potatoScienceName, nutrition: "manganese, potassium and vitamin C")
         XCTAssertEqual(potato.scienceName,potatoScienceName)
     }
     func testPotatoNutrition(){
         let potatoNutrition = "manganese, potassium and vitamin C"
-        let potato = Potato(nutrition: potatoNutrition)
+        let potato = Potato(name:"Kipfler", family:"Sweet Potato", weight:"20grams", scienceName: "Solanum tuberosum", nutrition: potatoNutrition)
         XCTAssertEqual(potato.nutrition,potatoNutrition)
     }
     func testFamily(){
         let potatoFamily = "Sweet Potato"
-        let potato = Potato(family:potatoFamily)
+        let potato = Potato(name:"Kipfler", family:potatoFamily, weight:"20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C")
         XCTAssertEqual(potato.family,potatoFamily)
     }
     
