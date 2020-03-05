@@ -12,6 +12,7 @@ struct Potato {
     let weight: String
     let nutrition:String
 
+    
     init(name:String, family:String, weight:String, scienceName:String, nutrition:String) {
         self.name = name
         self.family  = family
