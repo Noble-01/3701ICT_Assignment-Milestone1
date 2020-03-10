@@ -37,10 +37,13 @@ struct ContentView: View {
                 .scaledToFit()
         
             HStack(alignment: .center) {
-                //display the following elements horizontally
+                //display the following elements horizontally then vertically
+                //allows for the information to be stacked next to their category
                 VStack(alignment: .trailing){
-                    Text("Family:").fontWeight(.bold).multilineTextAlignment(.center)
-                        .padding(.bottom, 10.0)
+                    Text("Family:")
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                    .padding(.bottom, 10.0)
                     
                     Text("Weight:")
                     .fontWeight(.bold)
@@ -71,7 +74,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     //link the struct to the static view
-    //creats the object with the following parameters
+    //creates the object with the following parameters
     static var previews: some View {
         ContentView(potato: Potato(name: "Kipfler", family: "Sweet Potato", weight: "20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C"))
     }
