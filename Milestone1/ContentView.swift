@@ -9,13 +9,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    //links the struct potato so that objects can use its parameters
+    //links the struct potato so that code can use the  objects properties
     var potato: Potato
     
     var body: some View {
         //formats all text and images in a vertical stack
         VStack(alignment: .center) {
             //display the name for the object on the screen
+            //the text feilds call for the object then the property name of the object
             Text(potato.name)
                 .font(.title)
                 .fontWeight(.bold)

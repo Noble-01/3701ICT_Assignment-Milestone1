@@ -13,7 +13,7 @@ struct Potato {
     let weight: String
     let nutrition:String
 
-    
+    //initializer defines the objects inital state
     init(name:String, family:String, weight:String, scienceName:String, nutrition:String) {
         self.name = name
         self.family  = family
